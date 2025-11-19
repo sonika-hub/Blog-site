@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+<main class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card shadow-sm p-4">
+        <h2 class="mb-4 text-center">Write a New Blog</h2>
+        <form action="/submit-blog" method="POST">
+          <div class="mb-3">
+            <label for="title" class="form-label">Blog Title</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Enter your blog title" required>
+          </div>
+          <div class="mb-3">
+            <label for="author" class="form-label">Author</label>
+            <input type="text" class="form-control" id="author" name="author" placeholder="Your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <textarea class="form-control" id="content" name="content" rows="7" placeholder="Start writing your blog here..." required></textarea>
+          </div>
+          <div class="d-grid mt-4">
+            <button type="submit" class="btn btn-primary btn-lg" >Publish Blog</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+<%- include('partials/footer') %>

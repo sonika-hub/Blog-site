@@ -1,0 +1,26 @@
+ <%- include('partials/header') %>
+  <main class="container py-5">
+    <h1 class="mb-4 text-center">All Blog Posts</h1>
+    <% if (blogPosts && blogPosts.length) { %>
+      <div class="row">
+        <% blogPosts.forEach((p)=>{%>
+          <div class="col-md-6">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><%= p.title %></h3>
+                <p class="card-subtitle text-muted mb-2">
+                  <i class="bi bi-person-circle"></i> <%= p.author %>
+                </p>
+                <p class="card-text"><%= p.content %></p>
+              </div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    <% } else { %>
+      <div class="alert alert-info text-center">
+        No blog posts yet. <a href="/posts" class="btn btn-outline-primary btn-sm ms-2">Write your first post</a>
+      </div>
+    <% } %>
+  </main>
+  <%- include('partials/footer') %>

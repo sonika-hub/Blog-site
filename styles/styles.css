@@ -1,0 +1,104 @@
+
+body {
+  background: #f7f7f9;
+}
+
+
+.blog-header {
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 2rem;
+  background: #fff;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.blog-header .navbar-brand {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #444 !important;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link:hover {
+  color: #0d4077 !important;
+}
+.btn-primary, .btn-outline-secondary {
+  letter-spacing: 0.5px;
+}
+.blog-footer {
+  background: #222;
+  color: #fff;
+  border-top: 4px solid #0d4077;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.1);
+  font-size: 1rem;
+}
+.blog-footer a.btn-outline-light {
+  border-width: 2px;
+  font-size: 1.1rem;
+}
+.blog-footer a.btn-outline-light:hover {
+  background:  #0d4077;
+  border-color:  #0d4077;
+  color: #fff !important;
+}
+.blog-footer .form-control {
+  min-width: 180px;
+  border-radius: 30px;
+}
+.blog-footer .btn-primary {
+  border-radius: 30px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.blog-footer .bi {
+  vertical-align: -.125em;
+  font-size: 1.4rem;
+}
+.blog-footer hr {
+  border-top: 1px solid #334;
+  opacity: 0.15;
+  margin: 2rem 0 1.3rem;
+}
+.blog-footer .small, .blog-footer .small a {
+  color: #bbb;
+}
+.blog-footer span[style] {
+  color: #e25555 !important;
+}
+.bg-gradient {
+  background: linear-gradient(90deg, #e3ffe9, #f7f7f9 80%);
+}
+.card {
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 30px rgba(0,140,68,0.08);
+}
+.sidebar img {
+  width: 80px;
+  border: 2px solid  #0d4077;
+}
+.hero-btn {
+  box-shadow: 0 2px 12px rgba(0,123,255,.10);
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.blog-footer {
+  flex-shrink: 0;
+}
+
